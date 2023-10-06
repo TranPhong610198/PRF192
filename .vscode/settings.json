@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "mathlibraries.h": "c",
+        "random": "c"
+    }
+}
