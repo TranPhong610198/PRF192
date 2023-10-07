@@ -3,6 +3,11 @@
 #include <math.h>
 #include <stdlib.h>
 
+void Strcombine(char a[], char b[]){
+    strcat(a," ");
+    strcat(a,b);
+    printf("%s\n", a);
+}
 
 int main(){
     char name[50], c, aname1[50], aname2[50], aname3[50];
@@ -39,8 +44,9 @@ int main(){
     printf("Input another name to combine : ");
     getchar();// 
     scanf("%[^\n]", &aname2);
-    strcat(name, aname2);
-    printf("%s \n", name);
+    // strcat(name, aname2);
+    Strcombine(name, aname2);
+    // printf("%s \n", name);
 
     // Divide Firstname and Lastname and print to screen
     printf("Input another name to divide : ");
