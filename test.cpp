@@ -235,10 +235,6 @@
 //         printf("%d is not an element of array.");
 // }
 
-int main(){
-    char a[]="HOA";
-    char b[]="LA";
-    printf("%d", strcmp(a, b));
-}
+
 
 
