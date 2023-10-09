@@ -166,15 +166,15 @@ int search(double a[],int n, double x, int b[]) {
 	return act;
 }
 
-void delePos(double a[], int &n, int k) {
-	if (k>n)
-		k = n;
+void delePos(double a[], int *n, int k) {
+	if (k>*n)
+		k = *n;
 	if (k<0)
 		k = 0;
-	for (i=k; i<n-1; i++){
+	for (i=k; i<*n-1; i++){
 		a[i]= a[i+1];
 	}
-	n--;
+	*n= *n -1;
 }
 
 void deleValue(double a[], int n, double x,int b[]) {
@@ -227,7 +227,7 @@ int main() {
 					break;
 			case 4: printf("Enter a position to be deleted k = ");
 			        scanf("%d",&k);
-                    delePos(a,n,k);
+                    delePos(a,&n,k);
 			        break;
 			case 5: printf("Enter a value to be deleted x = ");
 			        scanf("%lf",&x);
@@ -236,9 +236,8 @@ int main() {
 			case 6: sort(a,n); break;
 			default: printf("Your selection is incorrect\n"); 
 				    break;
-			
 		}		
- }
+}
  printf("\n");
  system("pause");
  return(0);
