@@ -20,8 +20,8 @@ void Input(HS *x){
 }
 
 //Output function 
-void Output(HS a){
-	printf("%s %d and MSSV is : %s", a.name, a.age, a.MSSV);
+void Output(HS x){
+	printf("%s %d years olds \nStudent ID is : %s", x.name, x.age, x.MSSV);
 } 
 
 int main(){

@@ -125,9 +125,9 @@ void display(double a[], int n) {
 void sort(double a[], int n) {
 	// In this case i'll use Insertion Sort.
 	int step, key;
-	for (step=1; step<n-1;step++){
+	for (step=1; step<n;step++){
 		key = a[step];
-		j=step -1;
+		j= step -1;
 		while (a[j]>key && j>=0)
 		{
 			a[j+1] = a[j];
@@ -242,4 +242,3 @@ int main() {
  system("pause");
  return(0);
 }
-
